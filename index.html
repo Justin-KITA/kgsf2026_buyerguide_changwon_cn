@@ -16113,7 +16113,7 @@ const CONFIG = {
             },
             {
               "icon": "meet", "date": "11月27日（周五）", "title": "昌原洽谈会",
-              "must": { "label": "洽谈会开始时间", "time": "10:00", "place": "昌原会展中心（CECO）7层700号厅", "where": "至18:00 · 从酒店步行约5分钟" },
+              "must": { "time": "09:40", "place": "昌原会展中心（CECO）7层700号厅", "where": "洽谈会10:00–18:00 · 从酒店步行约5分钟" },   /* v169 도착 09:40 (상담 10:00) */
               "link": { "label": "洽谈时间表", "section": "matching" }
             },
             {
@@ -16152,7 +16152,8 @@ const CONFIG = {
             { "col": 3, "row": 7, "time": "16:30–18:00", "tag": "move", "key": true, "title": "团体大巴 → 昌原", "note": "[!在金海机场到达大厅集合上车]" },
             { "col": 3, "row": 8, "span": 2, "time": "约18:00", "tag": "stay", "title": "酒店入住", "note": "昌原美爵大使酒店" },
 
-            { "col": 4, "row": 2, "span": 2, "time": "10:00–12:00", "tag": "meeting", "key": true, "title": "洽谈会（上午）", "note": "CECO 7层700号厅 · 步行5分钟" },
+            { "col": 4, "row": 1, "time": "09:40前", "tag": "info", "key": true, "title": "到达7层700号厅", "note": "CECO · 步行约5分钟" },   /* v169 */
+            { "col": 4, "row": 2, "span": 2, "time": "10:00–12:00", "tag": "meeting", "key": true, "title": "洽谈会（上午）", "note": "CECO 7层700号厅" },
             { "col": 4, "row": 4, "time": "12:00–13:20", "tag": "meal", "title": "团体午餐", "note": "1层The Grade · 自助餐" },
             { "col": 4, "row": 5, "span": 3, "time": "13:20–18:00", "tag": "meeting", "key": true, "title": "洽谈会（下午）", "note": "昌原会展中心（CECO）7层700号厅" },
             { "col": 4, "row": 8, "time": "18:00–19:00", "tag": "stay", "title": "自由时间" },
@@ -16162,7 +16163,7 @@ const CONFIG = {
           ],
           "notes": [
             { "tag": "move", "text": "11月23日 · 仁川机场T1 / T2接机 → 乘机场大巴 · 15:00起办理入住酒店 [!不可提前入住]", "link": { "label": "查看接机信息", "section": "airport" } },
-            { "tag": "meeting", "text": "洽谈会 · 11月24日–25日 COEX 3层 D馆 · 11月27日 CECO 7层700号厅", "link": { "label": "查看我的洽谈日程", "section": "matching" } },
+            { "tag": "meeting", "text": "洽谈会 · 11月24日–25日 COEX 3层 D馆 · 11月27日 CECO 7层700号厅（请于09:40前到达）", "link": { "label": "查看我的洽谈日程", "section": "matching" } },
             { "tag": "move", "text": "11月24日–25日 · 早上08:30–08:45乘班车：酒店 → COEX北门 · 洽谈会结束后请自行返回酒店", "link": { "label": "查看班车信息", "section": "shuttle#seoul-shuttle" } },
             { "tag": "move", "key": true, "text": "11月26日 · 11:00前退房 → 11:30大堂集合 → 乘大巴前往金浦机场 → KE1833 → 乘大巴前往昌原酒店（旅行社工作人员随行）", "link": { "label": "查看交通安排", "section": "shuttle#changwon-transfer" } },
             { "tag": "meal", "text": "11月27日 · The Grade团体午餐 · Villade厅欢迎晚宴 · 提供清真及素食选择", "link": { "label": "查看餐饮安排", "section": "venue#changwon-dining" } },
@@ -16207,7 +16208,7 @@ const CONFIG = {
                 { "session": "第10场", "time": "17:20–18:00" },
                 { "break": "采购商欢迎晚宴 · 2层Villade厅", "time": "19:00–21:00" }
               ],
-              "note": "昌原会展中心（CECO）。从酒店2层经连廊到达CECO 3层，再乘左侧电梯到7层，步行约5分钟。"
+              "note": "请于**09:40前到达CECO 7层700号厅**。昌原会展中心（CECO）。从酒店2层经连廊到达CECO 3层，再乘左侧电梯到7层，步行约5分钟。"   /* v169 */
             }
           ]
         },
@@ -16853,6 +16854,10 @@ const CONFIG = {
                     [
                       "日期",
                       "11月27日（周五）"
+                    ],
+                    [
+                      "准时到场",
+                      "09:40"
                     ],
                     [
                       "上午",
